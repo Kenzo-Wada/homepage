@@ -1,0 +1,36 @@
+---
+import Header from '../components/common/Header.astro'
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Home Page of Kenzo-Wada" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+  <Header />
+	<body>
+		<main><slot /></main>
+	</body>
+</html>
+<style lang="scss" is:global>
+  body { 
+    display: block;
+    margin: 0;
+    background: url(noise.png), linear-gradient(to left bottom, #ddd6f3, #faaca8);
+    height: 100vh
+  }
+  a {
+    cursor: pointer;
+  }
+</style>
