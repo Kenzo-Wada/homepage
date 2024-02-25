@@ -1,0 +1,22 @@
+---
+---
+
+<button>
+  <slot/>
+</button>
+<style lang="scss">
+  button {
+    backdrop-filter: blur(2px);
+    background-color: #fef9fb66;
+    border: 1px solid #202124;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease 0s;
+  }
+  button:hover {
+    background-color: #20212433;
+  }
+</style>

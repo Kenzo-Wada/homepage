@@ -14,6 +14,9 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^7.3.3
     version: 7.3.3(astro@4.4.0)
+  '@fontsource-variable/m-plus-1-code':
+    specifier: ^5.0.17
+    version: 5.0.17
   astro:
     specifier: ^4.4.0
     version: 4.4.0(sass@1.71.1)(typescript@5.3.3)
@@ -623,6 +626,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/m-plus-1-code@5.0.17:
+    resolution: {integrity: sha512-EjZinPlrbPdJ1azXMBuXb60oRGY+IS+NgEPwM3AZ1Ju6zKvM0xUNQqvDl1Mu8SH31VNhAVKcyZ+2HZFbewep1Q==}
+    dev: false
 
   /@img/sharp-darwin-arm64@0.33.2:
     resolution: {integrity: sha512-itHBs1rPmsmGF9p4qRe++CzCgd+kFYktnsoR1sbIAfsRMrJZau0Tt1AH9KVnufc2/tU02Gf6Ibujx+15qRE03w==}

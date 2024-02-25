@@ -1,13 +1,20 @@
 ---
+import Button from "../common/Button.astro"
+import MenuIcon from "../icons/menu.astro"
 ---
 
 <header>
   <a>
     <span>Kenzo Wada</span>
   </a>
+  <Button>
+    <MenuIcon size={24}/>
+  </Button>
 </header>
 <style>
   header {
-    padding: 12px 
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
   }
 </style>

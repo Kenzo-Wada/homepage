@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+import '@fontsource-variable/m-plus-1-code';
 import Header from '../components/common/Header.astro'
 
 interface Props {
@@ -16,21 +18,38 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
 		<title>{title}</title>
 	</head>
-  <Header />
-	<body>
+  <body>
+    <Header />
 		<main><slot /></main>
 	</body>
 </html>
 <style lang="scss" is:global>
-  body { 
+  body {
+    font-family: 'M PLUS 1 Code Variable', monospace;
     display: block;
     margin: 0;
-    background: url(noise.png), linear-gradient(to left bottom, #ddd6f3, #faaca8);
+    background-color: hsla(232,100%,50%,1);
+    background-image: 
+      url(noise.png),
+      radial-gradient(at 87% 10%, hsla(191,100%,74%,1) 0px, transparent 50%),
+      radial-gradient(at 0% 51%, hsla(218,100%,56%,1) 0px, transparent 50%),
+      radial-gradient(at 16% 11%, hsla(355,100%,93%,1) 0px, transparent 50%),
+      radial-gradient(at 48% 39%, hsla(266,0%,91%,1) 0px, transparent 50%),
+      radial-gradient(at 20% 89%, hsla(22,100%,77%,1) 0px, transparent 50%),
+      radial-gradient(at 86% 86%, hsla(242,100%,70%,1) 0px, transparent 50%),
+      radial-gradient(at 95% 45%, hsla(343,100%,76%,1) 0px, transparent 50%);
     height: 100vh
   }
   a {
     cursor: pointer;
+  }
+  button {
+    cursor: pointer;
+  }
+  span {
+    color: #202124;
   }
 </style>

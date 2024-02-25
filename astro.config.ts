@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: true,
   integrations: [compress(), sitemap()],
   output: "server",
   adapter: vercel({
@@ -14,6 +15,6 @@ export default defineConfig({
     },
     imageService: true,
     isr: true,
-    functionPerRoute: true
-  })
+    functionPerRoute: true,
+  }),
 });
