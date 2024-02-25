@@ -1,5 +1,18 @@
 ---
 import Eyecatch from "./Eyecatch.astro"
+import Activities from "./Activities.astro"
 ---
 
 <Eyecatch />
+<div>
+  <Activities />
+</div>
+<style lang="scss">
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 3em auto;
+    max-width: 1200px;
+  }
+</style>

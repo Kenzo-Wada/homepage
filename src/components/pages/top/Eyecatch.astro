@@ -13,9 +13,9 @@ import {Image} from "astro:assets"
       </div>
     </div>
     <div class={'scroll'}>
-      <span class="scroll-text">scroll down</span>
-      <Image src={MouseImage} height={36} width={36} alt="mouse" loading="eager" />
-      <Image src={ChevronDownImage} height={24} width={24} alt="down" loading="eager" />
+      <span >scroll down</span>
+      <Image class="icon" src={MouseImage} height={36} width={36} alt="mouse" loading="eager" />
+      <Image class="icon" src={ChevronDownImage} height={24} width={24} alt="down" loading="eager" />
     </div>
   </div>
 </article>
@@ -41,7 +41,7 @@ import {Image} from "astro:assets"
   .description {
     font-size: 5em;
     font-weight: bold;
-    color: #202124;
+    color: #2021244d;
   }
   .beer {
     background-image: url(/underline.svg);
@@ -60,10 +60,12 @@ import {Image} from "astro:assets"
     flex-direction: column;
     align-items: center;
     gap: 0;
-    animation: floating-y 1s ease infinite alternate-reverse;
-  }
-  .scroll-text {
-    margin: 0.5em 0;
+    .icon {
+      animation: floating-y 1s ease infinite alternate-reverse;
+    }
+    span {
+      margin: 0.5em 0;
+    }
   }
   
   @keyframes floating-y {
