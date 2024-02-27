@@ -1,11 +1,12 @@
 ---
 import Button from "@components/common/Button.astro"
-import MenuIcon from "@components/icons/menu.astro"
+import MenuIcon from "public/menu.svg"
+import { Image } from "astro:assets"
 ---
 
 <header>
   <Button>
-    <MenuIcon size={24}/>
+    <Image src={MenuIcon} alt="menu" />
   </Button>
 </header>
 <style lang="scss">
