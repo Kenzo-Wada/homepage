@@ -1,29 +1,19 @@
 ---
-import Button from "../common/Button.astro"
-import MenuIcon from "../icons/menu.astro"
+import Button from "@components/common/Button.astro"
+import MenuIcon from "@components/icons/menu.astro"
 ---
 
 <header>
-  <a href="/">
-    kenzo
-  </a>
   <Button>
     <MenuIcon size={24}/>
   </Button>
 </header>
-<style>
+<style lang="scss">
   header {
-    padding: 2em;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: sticky;
     top: 0;
-  }
-  a {
-    align-self: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #202124;
-    text-decoration: inherit;
   }
 </style>

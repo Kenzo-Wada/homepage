@@ -1,6 +1,6 @@
 ---
-import MouseImage from "../../../../public/mouse.svg"
-import ChevronDownImage from "../../../../public/chevron-down.svg"
+import MouseImage from "public/mouse.svg"
+import ChevronDownImage from "public/chevron-down.svg"
 import {Image} from "astro:assets"
 ---
 
@@ -24,7 +24,7 @@ import {Image} from "astro:assets"
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 10rem);
   }
   .title {
     display: flex;
@@ -34,12 +34,12 @@ import {Image} from "astro:assets"
     
   }
   h1 {
-    font-size: 10em;
+    font-size: 10rem;
     margin: 0;
     color: #202124
   }
   .description {
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: bold;
     color: #2021244d;
   }
@@ -54,6 +54,7 @@ import {Image} from "astro:assets"
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    margin: 2rem;
   }
   .scroll {
     display: flex;
@@ -64,7 +65,7 @@ import {Image} from "astro:assets"
       animation: floating-y 1s ease infinite alternate-reverse;
     }
     span {
-      margin: 0.5em 0;
+      margin: 0.5rem 0;
     }
   }
   
